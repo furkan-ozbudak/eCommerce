@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">eCommerce</string>
+    <string name="signIn">Sign in to your account</string>
+    <string name="walmartLogo">Walmart Logo</string>
+    <string name="emailLogin">Email address (required)</string>
+    <string name="passwordLogin">Password (required)</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="signInButton">Sign in</string>
+    <string name="signUp">Don\'t have an account?</string>
+    <string name="signUpButton">Create a new account</string>
+</resources>
