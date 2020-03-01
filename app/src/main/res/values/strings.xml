@@ -1,4 +1,5 @@
 <resources>
+    <!-- LOGIN PAGE -->
     <string name="app_name">eCommerce</string>
     <string name="signIn">Sign in to your account</string>
     <string name="walmartLogo">Walmart Logo</string>
@@ -8,4 +9,23 @@
     <string name="signInButton">Sign in</string>
     <string name="signUp">Don\'t have an account?</string>
     <string name="signUpButton">Create a new account</string>
+    <!-- CATEGORIES PAGE -->
+    <string name="electronics">Electronics</string>
+    <string name="beauty">Beauty</string>
+    <string name="food">Food</string>
+    <string name="clothing">Clothing</string>
+    <string name="shoppingActivityHeader">Shop by Categories</string>
+    <string name="welcomeUser">Welcome user</string>
+    <!-- REGISTER PAGE -->
+    <string name="registerHeader">Create your account</string>
+    <string name="requiredField">* required field</string>
+    <string name="firstName">First name *</string>
+    <string name="lastName">Last name *</string>
+    <string name="email">Email address *</string>
+    <string name="password">Password *</string>
+    <string name="registerButton">Create Account</string>
+
+
+
+
 </resources>
