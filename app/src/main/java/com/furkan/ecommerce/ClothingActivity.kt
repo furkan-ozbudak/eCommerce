@@ -1,28 +1,18 @@
 package com.furkan.ecommerce
 
-import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.view.Gravity
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.ListView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_clothing.*
 
 class ClothingActivity : AppCompatActivity() {
-    var images = intArrayOf(
-        R.drawable.shirt, R.drawable.tshirt, R.drawable.shoes, R.drawable.watch,
-        R.drawable.pant
-    )
-    var items = arrayOf<String>(
-        "Shirt",
-        "T-Shirt",
-        "Shoes",
-        "Watch",
-        "Pant"
-    )
+    var items = arrayOf<String>("shirt", "t-shirt", "shoes", "watch", "pants")
+    var descriptions = arrayOf("Fancy, blue shirt", "Comfortable, black t-shirt",
+        "Classical, man shoes", "Fashionable, leather watch", "Casual, green pants")
+    var prices = arrayOf(30.0, 20.0, 60.0, 70.0, 35.0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,5 +24,15 @@ class ClothingActivity : AppCompatActivity() {
             items
         )
         listView.adapter = adapter
+
+        listView.onItemClickListener =
+            AdapterView.OnItemClickListener { parent, view, position, id ->
+                var toast = Toast.makeText(
+                    this,
+                    "Description: ${descriptions[position]} \nPrice: $${prices[position]}", Toast.LENGTH_SHORT
+                )
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show()
+            }
     }
 }

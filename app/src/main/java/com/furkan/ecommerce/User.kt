@@ -15,6 +15,8 @@ class User : Serializable{
         this.password = password
     }
 
+
+
     constructor() {
     }
 }
