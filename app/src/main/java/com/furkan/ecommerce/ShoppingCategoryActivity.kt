@@ -1,9 +1,9 @@
 package com.furkan.ecommerce
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_shopping_category.*
 
 class ShoppingCategoryActivity : AppCompatActivity() {
@@ -16,6 +16,11 @@ class ShoppingCategoryActivity : AppCompatActivity() {
 
     fun onClothingClick(view: View) {
         var intent = Intent(applicationContext, ClothingActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun onElectronicClick(view: View) {
+        var intent = Intent(applicationContext, ElectronicActivity::class.java)
         startActivity(intent)
     }
 }
